@@ -3,6 +3,11 @@
     padding: 0%;
 }
 
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ESTILO GERAL DO HEADER */
 
 header {
     background-color: #D9D9D9;
@@ -14,15 +19,29 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-}
+} /* container do header */
+
+.header-container img {
+    width: 200px;
+} /* logo do header */
 
 .header-container nav ul {
     list-style: none;
-    gap: 20px;
+    gap: 25px;
     display: flex;
     flex-direction: row;
-}
+} /* container da lista do header */
 
+.header-container nav ul li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+}   /* âncoras do header */
+
+.fale-conosco {
+    background-color: #E6AD2D;
+    padding: 0.5em;
+    border-radius: 15px;
+} /* botão fale conosco do header */
 
 /* ESTILO GERAL DO FOOTER */
 
