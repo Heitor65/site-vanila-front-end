@@ -22,7 +22,8 @@ header {
 } /* container do header */
 
 .header-container img {
-    width: 200px;
+    max-width: 50%;
+    height: auto;
 } /* logo do header */
 
 .header-container nav ul {
@@ -35,6 +36,7 @@ header {
 .header-container nav ul li a {
     text-decoration: none;
     font-size: 1.5rem;
+    color: black;
 }   /* âncoras do header */
 
 .fale-conosco {
