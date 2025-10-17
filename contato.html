@@ -1,36 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
-    <link rel="stylesheet" href="style/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - Ibmec</title>
+  <link rel="stylesheet" href="/estilos/style-contato.css">
+  <link rel="stylesheet" href="/estilos/style.css">
 </head>
 
 <body>
-    <header>
-        <section>
-            <a href="index.html"><img src="imagens/logo-ibmec.png" alt="Logo da Ibmec"></a>
 
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="sobre.html">Soobre Nós</a></li>
-                    <li><a href="cases.html">Cases de Sucesso</a></li>
-                    <li><a href="faq.html"></a>FAQ</li>
-                    <li><a href="contato.html">Contato</a></li>
-                    <li><a href="fale-conosco.html">Fale Conosco</a></li>
-                </ul>
-            </nav>
-        </section>
-    </header>
+  <!-- ===== Cabeçalho ===== -->
+  <header class="topo">
+    <div class="logo-topo">
+      <a href="index.html"><img src="imagens/logo-ibmec.png" alt="Logo Ibmec"></a>
+    </div>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cases.html">Cases</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="form.html" class="botao-topo">Fale conosco</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
+  <!-- ===== Seção Principal ===== -->
+  <main>
+    <section class="secao-contato">
+      <h1 class="titulo-contato">Contate-nos!</h1>
+      <hr class="linha">
 
-    </main>
+      <div class="container-contato">
+        <!-- Formulário -->
+        <div class="formulario">
+          <form>
+            <div class="campo">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" name="nome">
+            </div>
+            <div class="campo">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email">
+            </div>
+            <div class="campo">
+              <label for="numero">Número</label>
+              <input type="tel" id="numero" name="numero">
+            </div>
+            <div class="campo">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem"></textarea>
+            </div>
+            <button type="submit" class="botao-enviar">Contate-nos!</button>
+          </form>
+        </div>
 
-    <footer>
+        <!-- Informações -->
+        <div class="informacoes">
+          <h2>Informações</h2>
+          <p>emailrandom@ibmec.com</p>
+          <p>+99 999999999</p>
+          <p>endereço aleatório da Ibmec,<br> rua xxx, país xxx</p>
+
+          <div class="redes">
+            <a href="#"><img src="imagens/footer_icones/instagram-brands-solid-full.svg" alt="Instagram"></a>
+            <a href="#"><img src="imagens/footer_icones/facebook-brands-solid-full.svg" alt="Facebook"></a>
+            <a href="#"><img src="imagens/footer_icones/whatsapp-brands-solid-full.svg" alt="WhatsApp"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
         <div class="footer-container">
             <div class="footer-column logo-column">
                 <img src="imagens/logo-ibmec.png" alt="logo da Ibmec" class="footer-logo">
@@ -83,5 +127,4 @@
         </div>
     </footer>
 </body>
-
 </html>
