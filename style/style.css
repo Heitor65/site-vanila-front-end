@@ -52,6 +52,12 @@ header {
     border-radius: 15px;
 } /* botão fale conosco do header */
 
+.fale-conosco {
+    background-color: #E6AD2D;
+    padding: 0.5em;
+    border-radius: 15px;
+} /* botão fale conosco do header */
+
 /* ESTILO GERAL DO FOOTER */
 
 footer {
