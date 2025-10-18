@@ -1,9 +1,11 @@
+
 /* Define o "card" principal da página de contato */
 .pagina-contato {
   border: 1px solid #ccc;
   padding: 20px;
   border-radius: 8px;
   box-sizing: border-box;
+  background-color: white;
 
   /* Centraliza o card na tela com uma largura máxima */
   max-width: 900px;

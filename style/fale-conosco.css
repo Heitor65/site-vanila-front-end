@@ -96,7 +96,7 @@ button[type="submit"] {
   margin-top: 0.5em;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
 
   /* Diminui o padding da página */
   main {
