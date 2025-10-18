@@ -28,7 +28,7 @@ header {
 
 .header-container nav ul {
     list-style: none;
-    gap: 25px;
+    gap: 30px;
     display: flex;
     flex-direction: row;
 } /* container da lista do header */
@@ -38,6 +38,13 @@ header {
     font-size: 1.5rem;
     color: black;
 }   /* âncoras do header */
+
+
+/* hover ancoras header */
+.header-container nav ul li a:hover { 
+    display: inline-block;
+    transform: scale(1.01);
+}
 
 .fale-conosco {
     background-color: #E6AD2D;
