@@ -1,0 +1,239 @@
+
+body {
+  margin: 0; /* Remove a margem padrão do navegador */
+  background-color: rgb(0 35 85); /* Cor de fundo azul escura */
+}
+
+/* Contêiner principal da página */
+main {
+  padding: 0; /* Remove padding para o hero ocupar a tela toda */
+  width: 100%;
+}
+
+/* Hero (Topo) */
+.hero {
+  position: relative; 
+  width: 100%;
+  height: 400px;
+  color: white;
+  text-align: center;
+  /* Centraliza o conteúdo (texto) verticalmente e horizontalmente */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Contêiner da imagem de fundo do Hero */
+.hero-imagem {
+  position: absolute; /* Posição no fundo, atrás do texto */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+/* A imagem de fundo em si */
+.hero-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Faz a imagem cobrir o espaço sem distorcer */
+}
+
+/* Camada de overlay */
+.hero-imagem::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* título e parágrafo do Hero */
+.hero-conteudo {
+  position: relative; /* Posição na frente da imagem/overlay */
+  z-index: 2;
+  width: 90%;
+  max-width: 800px;
+}
+/* Título principal (h1) */
+.hero-conteudo h1 {
+  font-size: 3.5em;
+  margin: 0 0 0.25em 0;
+}
+/* Parágrafo de introdução */
+.hero-conteudo .introducao p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #f0f0f0;
+}
+
+/*  (Fundo Azul)  */
+.conteudo-principal {
+  background-color: rgb(0 35 85);
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /
+}
+
+/* Linha amarela  */
+.separador-amarelo {
+  width: 850px;
+  height: 4px;
+  background-color: #E6AD2D;
+  border: 0;
+  margin: 1em 0 2em 0;
+}
+
+/* (Fundo Amarelo) */
+.destaques-geral {
+  background-color: #E6AD2D;
+  width: 100%;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  box-sizing: border-box;
+}
+
+
+/* Estilo base para todas as box */
+.box,
+.destaques-box,
+.parceiros-box {
+  background-color: #fdfaf6; /* Cor creme/bege */
+  color: #222;
+  border-radius: 8px;
+  padding: 2em;
+  width: 100%;
+  max-width: 800px; /* Largura máxima dos cards */
+  margin-bottom: 2em;
+}
+
+/* Remove a margem do último card de cada seção */
+.conteudo-principal .box:last-child,
+.destaques-geral .destaques-box:last-child,
+.conteudo-principal .parceiros-box:last-child {
+  margin: 0;
+}
+
+/* Títulos (h2) dentro das box */
+.box h2,
+.destaques-box h2,
+.parceiros-box h2 {
+  color: rgb(0 35 85);
+  font-size: 2.2em;
+  margin-top: 0;
+}
+
+/* Textos (p) e itens de lista (li) dentro das boxs*/
+.box p,
+.destaques-box p,
+.destaques-box li {
+  font-size: 1.1em;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* Lista de Valores */
+.destaques-box ul {
+  list-style: none; /* Remove as bolinhas da lista */
+}
+
+/* Itens da lista de Valores */
+.destaques-box li {
+  margin-bottom: 0.5em;
+}
+
+/*  Parceiros  */
+.lista-parceiros {
+  display: flex;
+  justify-content: space-around; /* Espaça os itens */
+  flex-wrap: wrap; /* Permite quebrar linha em telas menores */
+  gap: 2em;
+  margin-top: 2em;
+}
+
+/* (logo + estrelas) */
+.parceiro-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+}
+
+/* Logo da empresa */
+.parceiro-item img {
+  max-width: 100%;
+  height: 60px;
+  object-fit: contain; /* Garante que a logo não distorça */
+  margin-bottom: 1em;
+}
+
+/* Contêiner das estrelas */
+.estrelas {
+  display: flex;
+  gap: 5px; /* Espaço entre as estrelas */
+}
+
+/* Imagem individual da estrela */
+.estrelas img {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+  
+  /* Ajuste do Hero para mobile */
+  .hero {
+    height: 300px;
+  }
+  /* Título principal no mobile */
+  .hero-conteudo h1 {
+    font-size: 2.5em;
+  }
+  /* Texto de introdução no mobile */
+  .hero-conteudo .introducao p {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+
+  /* Ajuste de espaçamento dos contêineres */
+  .conteudo-principal,
+  .destaques-geral {
+    padding: 1.5em 1em;
+  }
+
+  /* Ajuste de espaçamento interno dos cards */
+  .box,
+  .destaques-box,
+  .parceiros-box {
+    padding: 1.5em;
+  }
+
+  /* Títulos (h2) dos cards no mobile */
+  .box h2,
+  .destaques-box h2,
+  .parceiros-box h2 {
+    font-size: 1.8em;
+  }
+
+  /* Textos dos cards no mobile */
+  .box p,
+  .destaques-box p,
+  .destaques-box li {
+    font-size: 1em;
+    line-height: 1.6;
+  }
+
+  /* Alinhamento dos parceiros no mobile */
+  .lista-parceiros {
+    justify-content: center;
+  }
+
+}
