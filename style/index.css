@@ -33,8 +33,32 @@
 .sobre-section {
     background-color: #002355;
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5rem;
+    justify-content: space-around;
+}
+
+.sobre-section div {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
 }
 
 .sobre-section h2, p {
     color: white;
+}
+
+.sobre-section h2 {
+    font-size: 4rem;
+}
+
+.sobre-section p {
+    font-size: 2rem;
+}
+
+.sobre-section img{
+    width: 50%;
+    height: auto;
+    border-radius: 30px;
 }
