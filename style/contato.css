@@ -1,0 +1,90 @@
+/* Define o "card" principal da página de contato */
+.pagina-contato {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  box-sizing: border-box;
+
+  /* Centraliza o card na tela com uma largura máxima */
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+/* Estilo do Título "Contate-nos!" */
+.pagina-contato > h1 {
+  text-align: center;
+}
+
+/* Contêiner principal para o layout (form/info) */
+.container-contato {
+  display: flex; /* Alinha os filhos lado a lado */
+  gap: 20px;
+}
+
+/* Define os blocos de formulário e informações */
+.container-contato > div {
+  width: 50%; /* Cada bloco ocupa metade do espaço */
+  padding: 10px;
+}
+
+/* Formulário: Espaçamento entre os campos */
+form > div {
+  margin-bottom: 15px;
+}
+
+/* Formulário: Labels e Inputs (um em cima do outro) */
+form label,
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Formulário: Aparência das caixas de input/textarea */
+form input,
+form textarea {
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Bloco de Informações: Título "Informações" */
+.informacoes h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Bloco de Informações: Parágrafos de texto */
+.informacoes p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+/* Ícones de Redes Sociais: Contêiner */
+.redes {
+  display: flex; /* Alinha os ícones lado a lado */
+  gap: 15px;
+}
+
+/* Ícones de Redes Sociais: Tamanho das imagens */
+.redes img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Estilo do Botão de Envio */
+form button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
