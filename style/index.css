@@ -175,7 +175,7 @@ a {
     font-size: 1.5rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     .hero {
         background-image: url(../imagens/IBMEC_SAO_PAULO_HERO.png);
         background-size: cover;
@@ -203,5 +203,44 @@ a {
         height: auto;
         border-radius: 30px;
         margin: 1rem;
+    }
+
+    .sobre-section h2, p {
+        text-align: center;
+    }
+
+    .dados-container {
+        display: flex;
+        flex-direction: column;
+        background-color: #E6AD2D;
+        align-items: center;
+        min-height: 50vh;
+    }
+
+    .dados-container h2 {
+        text-align: center;
+        font-size: 3.5rem;
+        padding: 1rem;
+    }
+
+    .dados-container div {
+        display: flex;
+        flex-direction: column;
+        background-color: #E6AD2D;
+        justify-content: space-between;
+    }
+
+    .dados-container div div {
+        background-color: white;
+        margin: 2rem;
+        padding: 3rem;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .dados-container div div p {
+        color: black;
+        font-size: 2rem;
     }
 }
