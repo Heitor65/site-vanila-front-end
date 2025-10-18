@@ -1,3 +1,8 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
 /* Estilos Gerais (Fundo Azul) */
 main {
   background-color: rgb(0 35 85);
@@ -6,6 +11,9 @@ main {
   flex-direction: column;
   align-items: center;
   padding: 2em;
+  width: 100%;             
+  max-width: none;           
+  box-sizing: border-box;
 }
 
 /* Título principal (h1) da página */
@@ -66,7 +74,7 @@ details > p {
 /* Seção Amarela (Não achou sua dúvida?) */
 #duvida {
   background-color: #E6AD2D;
-  width: 100vw;
+  width: 100%;
   padding: 3em 0;
   margin-top: 2em;
   display: flex;
