@@ -30,57 +30,90 @@
 
     <main>
         <h1>Perguntas Frequentes</h1>
-        <h2>Encontre respostas rápidas para as principais dúvidas.</h2>
-        <div>
-            <h1>Geral</h1>
-            <hr>
-            <p>O serviço é grauito para as empresas?</p>
-            <hr>
-            <p>Preciso ter CNPJ para enviar um problema?</p>
-            <hr>
-            <p>Pequenos negócios e startups podem participar?</p>
-            <hr>
-            <p>Os projetos enviados ficam públicos?</p>
-            <hr>
-            <p>Posso acompanhar o andamento do meu problema depois de enviado?</p>
-            <hr>
-        </div>
-        <div id="selection">
-        </div>
-        <div>
-            <h1>Sobre</h1>
-            <hr>
-            <p>Quem está por trás da plataforma?</p>
-            <hr>
-            <p>Qual é a missão do projeto?</p>
-            <hr>
-            <p>Como vocês selecionam os parceiros que participam?</p>
-            <hr>
-            <p>Como posso entrar em contato para mais informações?</p>
-            <hr>
-        </div>
-        <div>
-            <h1>Processo</h1>
-            <hr>
-            <p>Como funciona o envio de um problema pela empresa?</p>
-            <hr>
-            <p>O que acontece após o envio do formulário?</p>
-            <hr>
-            <p>Há algum prazo para a universidade dar retorno?</p>
-            <hr>
-            <p>À quem pertence os projetos realizados?</p>
-            <hr>
-        </div>
-        <div id="duvidaDiv">
-            <div>
-                <h1>Não achou a resposta para sua dúvida?</h1>
-                <h3>Digite aqui a sua pergunta!</h3>
-                <form>
-                    <input type="text" id="duvida" placeholder="Mande aqui sua dúvida" required>
-                    <input type="submit">
-                </form>
-            </div>
-        </div>
+        <p class="subtitulo">Encontre respostas rapidas para as principais duvidas.</p>
+
+        <section class="faq-categoria">
+            <h2>Geral</h2>
+
+            <details>
+                <summary>O serviço é gratuito para empresas?</summary>
+                <p>Resposta</p>
+            </details>
+
+            <details>
+                <summary>Pequenos negócios e startups podem participar?</summary>
+                <p>Resposta</p>
+            </details>
+
+            <details>
+                <summary>Os projetos enviados ficam públicos?</summary>
+                <p>Resposta</p>
+            </details>
+
+            <details>
+                <summary>Posso acompanhar o andamento do meu problema depois de enviado?</summary>
+                <p>Resposta</p>
+            </details>
+        </section>
+
+        <section class="faq-categoria">
+            <h2>Sobre</h2>
+
+            <details>
+                <summary>Quem está por trás da plataforma?</summary>
+                <p>Resposta</p>
+            </details>
+
+            <details>
+                <summary>Qual é a missão do projeto?</summary>
+                <p>Resposta</p>
+            </details>
+
+            <details>
+                <summary>Como vocês selecionam os parceiros que participam?</summary>
+                <p>Resposta</p>
+            </details>
+
+            <details>
+                <summary>Como posso entrar em contato para mais informações?</summary>
+                <p>Resposta</p>
+            </details>
+
+        </section>
+
+        <section class="faq-categoria">
+            <h2>Processo</h2>
+
+            <details>
+                <summary>Como funciona o envio de um problema pela empresa?</summary>
+                <p>Aqui vai a resposta sobre o processo de envio.</p>
+            </details>
+
+            <details>
+                <summary>O que acontece após o envio do formulário?</summary>
+                <p>Aqui vai a resposta sobre os próximos passos após o envio.</p>
+            </details>
+
+            <details>
+                <summary>Há algum prazo para a universidade dar retorno?</summary>
+                <p>Aqui vai a resposta sobre os prazos de retorno.</p>
+            </details>
+
+            <details>
+                <summary>À quem pertence os projetos realizados?</summary>
+                <p>Aqui vai a resposta sobre a propriedade intelectual dos projetos.</p>
+            </details>
+        </section>
+
+        <section id="duvida">
+        <div class="duvida-box"> <h2>Não achou a resposta para sua dúvida?</h2>
+
+            <form>
+                <label for="duvida">Digite aqui a sua pergunta!</label>
+                <input type="text" id="duvida" placeholder="Mande aqui sua dúvida" required>
+                <input type="submit" value="Enviar">
+            </form>
+        </div> </section>
     </main>
 
     <footer>
