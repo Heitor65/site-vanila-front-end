@@ -1,3 +1,4 @@
+/* Hero Section */
 .hero {
     background-image: url(../imagens/IBMEC_SAO_PAULO_HERO.png);
     background-size: cover;
@@ -11,6 +12,7 @@
     align-items: center;
 }
 
+ /*TEXTOS HERO*/
 .hero h1 {
     font-size: 6rem;
     color: white;
@@ -131,6 +133,7 @@ a {
     color: black;
 }
 
+/* Imagem do topo do card */
 .card img {
     width: 100%;
     height: 7rem;
@@ -175,6 +178,8 @@ a {
     font-size: 1.5rem;
 }
 
+/* RESPONSIVIDADE */
+/*Aqui foi basicamente alinhar os textos, mudar a flex-direction para column e mexer no tamanho dos itens*/
 @media (max-width: 480px) {
     .hero {
         background-image: url(../imagens/IBMEC_SAO_PAULO_HERO.png);
@@ -188,8 +193,10 @@ a {
         justify-content: center;
         align-items: center;
     }
-    
-    .hero h1, h2, a {
+
+    .hero h1,
+    h2,
+    a {
         text-align: center;
     }
 
@@ -324,5 +331,4 @@ a {
         text-align: center;
         font-size: 1.5rem;
     }
-    
 }
