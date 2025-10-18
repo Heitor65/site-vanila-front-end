@@ -176,6 +176,12 @@ a {
 }
 
 @media (max-width: 480px) {
+/* deixa apenas com rolagem vertical evitando espaçamento branco ao lado */
+    html, body {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+  }
     .hero {
         background-image: url(../imagens/IBMEC_SAO_PAULO_HERO.png);
         background-size: cover;
