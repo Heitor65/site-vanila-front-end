@@ -2,6 +2,24 @@ main {
     background-color: #002355;
 }
 
+.seção-hero {
+    background-image: url(../imagens/foto.cases.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    gap: 32px;
+    display: flex;
+    flex-direction: column;
+    min-height: 45vh;
+    justify-content: center;
+    align-items: center;
+}
+/* Cor branca do h1 e deixa ele com um tamanho de fonte específico*/
+.seção-hero h1 {
+    font-size: 4rem;
+    color: white;
+}
+
 .titulo {
     display: flex;
     flex-direction: row;
