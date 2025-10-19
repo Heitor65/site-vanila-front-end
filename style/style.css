@@ -41,10 +41,13 @@ header {
 
 
 /* hover ancoras header */
+/*
 .header-container nav ul li a:hover { 
     display: inline-block;
     transform: scale(1.01);
-}
+} */
+
+/* removido devido a problemas no header*/
 
 .fale-conosco {
     background-color: #E6AD2D;
