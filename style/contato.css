@@ -94,6 +94,8 @@ form button {
 }
 
 @media (max-width: 480px) {
+
+  /* Layout em coluna e texto centralizado */
   .container-contato {
     flex-direction: column;
     align-items: center;

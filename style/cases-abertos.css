@@ -148,6 +148,8 @@ a {
     color: white;
 }
 
+/* alinhar itens, textos, deixar tudo em coluna, mudar algumas margens e paddings e é basicamente isso para a responsividade da página */
+
 @media (max-width: 480px) {
 
     .seção-hero h1 {
@@ -174,7 +176,7 @@ a {
         padding: 1.5rem;
         border-radius: 20px;
     }
-
+    /* widht 100% pois agora eles estão em coluna */
     .container section {
         width: 100%;
     }
