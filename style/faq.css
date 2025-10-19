@@ -87,9 +87,11 @@ details > p {
   border-radius: 1em;
   color: black;
   text-align: center;
-  width: 90%;
-  max-width: 40em;
-  padding: 2.5em;
+  width: 76%;           /* reduzida para deixar espaço lateral dentro da área amarela */
+  max-width: 36em;      /* largura máxima menor */
+  padding: 2.2em;
+  margin: 0 auto;       /* centraliza e garante espaçamento lateral */
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
 }
 
 /* Título dentro do card branco (h2) */
@@ -120,6 +122,7 @@ details > p {
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
+  background-color: #dbdbdb;
 }
 
 /* Botão de envio (submit) */
@@ -132,4 +135,60 @@ details > p {
   font-size: 1.1em;
   font-weight: bold;
   cursor: pointer;
+}
+
+  /* Responsividade para celulares pequenos */
+@media (max-width: 480px) {
+  
+  /* Seção amarela que envolve todo o bloco de dúvidas */
+  #duvida {
+    padding: 1.2em 0;
+  }
+
+  /* Card branco interno (reduzido para não encostar na amarela) */
+  .duvida-box {
+    width: 76%;
+    max-width: 420px;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: left;
+    margin: 0 auto;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  }
+
+  /* Título dentro do card */
+  .duvida-box h2 {
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+  }
+
+  /* Formulário: empilha elementos verticalmente em mobile */
+  #duvida form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    align-items: stretch;
+  }
+
+  /* Rótulo do campo */
+  #duvida label {
+    font-size: 0.95rem;
+  }
+
+  /* Campo de texto */
+  #duvida input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 0.95rem;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+
+  /* Botão de envio */
+  #duvida input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+  }
 }

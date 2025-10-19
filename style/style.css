@@ -165,7 +165,7 @@ footer {
 
 
 /*  RESPONSIVIDADE (CELULAR) */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     .footer-container {
         flex-direction: column;
         /* Empilha as colunas verticalmente */
@@ -182,4 +182,31 @@ footer {
         padding: 40px 8% 20px 8%;
         /* Ajusta o padding para telas menores */
     }
+/* Deixa o menu e logo em coluna */
+.header-container {
+    padding: 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
 }
+/* Deixa a logo menor */
+.header-container img {
+    max-width: 140px;
+    height: auto;
+}
+/* Deixa o menu na vertical */
+.header-container nav ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+/* Diminui o tamanho do texto e espaçamento interno */
+.header-container nav ul li a {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 15px;
+}
+}
+
