@@ -108,6 +108,13 @@ p {
     gap: 3rem;
 }
 
+.cases-container h2 {
+    padding-top: 1rem;
+    padding-bottom: 0%;
+    color: white;
+    font-size: 3.5rem;
+}
+
 .cases-container div {
     margin: 1rem;
     padding: 0.5rem;
@@ -143,7 +150,7 @@ a {
 
 .card a {
     text-decoration: none;
-    background-color: #afafaf;
+    background-color: #efefef;
     font-size: 1.5rem;
     padding: 0.05rem;
     border-radius: 100%;
