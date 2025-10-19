@@ -1,9 +1,10 @@
-* { /* RESET SIMPLES*/
+* {
+    /* RESET SIMPLES*/
     margin: 0%;
     padding: 0%;
 }
 
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -19,25 +20,33 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-} /* container do header */
+}
+
+/* container do header */
 
 .header-container img {
     max-width: 50%;
     height: auto;
-} /* logo do header */
+}
+
+/* logo do header */
 
 .header-container nav ul {
     list-style: none;
     gap: 30px;
     display: flex;
     flex-direction: row;
-} /* container da lista do header */
+}
+
+/* container da lista do header */
 
 .header-container nav ul li a {
     text-decoration: none;
     font-size: 1.5rem;
     color: black;
-}   /* âncoras do header */
+}
+
+/* âncoras do header */
 
 
 /* hover ancoras header */
@@ -53,13 +62,17 @@ header {
     background-color: #E6AD2D;
     padding: 0.5em;
     border-radius: 15px;
-} /* botão fale conosco do header */
+}
+
+/* botão fale conosco do header */
 
 .fale-conosco {
     background-color: #E6AD2D;
     padding: 0.5em;
     border-radius: 15px;
-} /* botão fale conosco do header */
+}
+
+/* botão fale conosco do header */
 
 /* ESTILO GERAL DO FOOTER */
 
@@ -185,32 +198,35 @@ footer {
         padding: 40px 8% 20px 8%;
         /* Ajusta o padding para telas menores */
     }
-/* Deixa o menu e logo em coluna */
-.header-container {
-    padding: 12px;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-}
-/* Deixa a logo menor */
-.header-container img {
-    max-width: 140px;
-    height: auto;
-}
-/* Deixa o menu na vertical */
-.header-container nav ul {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-/* Diminui o tamanho do texto e espaçamento interno */
-.header-container nav ul li a {
-    display: block;
-    width: 100%;
-    padding: 10px 0;
-    font-size: 15px;
-    text-align: center;
-}
-}
 
+    /* Deixa o menu e logo em coluna */
+    .header-container {
+        padding: 12px;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    /* Deixa a logo menor */
+    .header-container img {
+        max-width: 140px;
+        height: auto;
+    }
+
+    /* Deixa o menu na vertical */
+    .header-container nav ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    /* Diminui o tamanho do texto e espaçamento interno */
+    .header-container nav ul li a {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+        font-size: 15px;
+        text-align: center;
+    }
+}

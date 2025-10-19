@@ -1,18 +1,20 @@
-
 body {
-  margin: 0; /* Remove a margem padrão do navegador */
-  background-color: rgb(0 35 85); /* Cor de fundo azul escura */
+  margin: 0;
+  /* Remove a margem padrão do navegador */
+  background-color: rgb(0 35 85);
+  /* Cor de fundo azul escura */
 }
 
 /* Contêiner principal da página */
 main {
-  padding: 0; /* Remove padding para o hero ocupar a tela toda */
+  padding: 0;
+  /* Remove padding para o hero ocupar a tela toda */
   width: 100%;
 }
 
 /* Hero (Topo) */
 .hero {
-  position: relative; 
+  position: relative;
   width: 100%;
   height: 400px;
   color: white;
@@ -25,7 +27,8 @@ main {
 
 /* Contêiner da imagem de fundo do Hero */
 .hero-imagem {
-  position: absolute; /* Posição no fundo, atrás do texto */
+  position: absolute;
+  /* Posição no fundo, atrás do texto */
   top: 0;
   left: 0;
   width: 100%;
@@ -37,7 +40,8 @@ main {
 .hero-imagem img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Faz a imagem cobrir o espaço sem distorcer */
+  object-fit: cover;
+  /* Faz a imagem cobrir o espaço sem distorcer */
 }
 
 /* Camada de overlay */
@@ -52,16 +56,19 @@ main {
 
 /* título e parágrafo do Hero */
 .hero-conteudo {
-  position: relative; /* Posição na frente da imagem/overlay */
+  position: relative;
+  /* Posição na frente da imagem/overlay */
   z-index: 2;
   width: 90%;
   max-width: 800px;
 }
+
 /* Título principal (h1) */
 .hero-conteudo h1 {
   font-size: 3.5em;
   margin: 0 0 0.25em 0;
 }
+
 /* Parágrafo de introdução */
 .hero-conteudo .introducao p {
   font-size: 1.2em;
@@ -75,7 +82,7 @@ main {
   padding: 2em;
   display: flex;
   flex-direction: column;
-  align-items: center; /
+  align-items: center;/
 }
 
 /* Linha amarela  */
@@ -94,7 +101,7 @@ main {
   padding: 2em;
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
   box-sizing: border-box;
 }
 
@@ -103,12 +110,14 @@ main {
 .box,
 .destaques-box,
 .parceiros-box {
-  background-color: #fdfaf6; /* Cor creme/bege */
+  background-color: #fdfaf6;
+  /* Cor creme/bege */
   color: #222;
   border-radius: 8px;
   padding: 2em;
   width: 100%;
-  max-width: 800px; /* Largura máxima dos cards */
+  max-width: 800px;
+  /* Largura máxima dos cards */
   margin-bottom: 2em;
 }
 
@@ -139,7 +148,8 @@ main {
 
 /* Lista de Valores */
 .destaques-box ul {
-  list-style: none; /* Remove as bolinhas da lista */
+  list-style: none;
+  /* Remove as bolinhas da lista */
 }
 
 /* Itens da lista de Valores */
@@ -150,8 +160,10 @@ main {
 /*  Parceiros  */
 .lista-parceiros {
   display: flex;
-  justify-content: space-around; /* Espaça os itens */
-  flex-wrap: wrap; /* Permite quebrar linha em telas menores */
+  justify-content: space-around;
+  /* Espaça os itens */
+  flex-wrap: wrap;
+  /* Permite quebrar linha em telas menores */
   gap: 2em;
   margin-top: 2em;
 }
@@ -168,14 +180,16 @@ main {
 .parceiro-item img {
   max-width: 100%;
   height: 60px;
-  object-fit: contain; /* Garante que a logo não distorça */
+  object-fit: contain;
+  /* Garante que a logo não distorça */
   margin-bottom: 1em;
 }
 
 /* Contêiner das estrelas */
 .estrelas {
   display: flex;
-  gap: 5px; /* Espaço entre as estrelas */
+  gap: 5px;
+  /* Espaço entre as estrelas */
 }
 
 /* Imagem individual da estrela */
@@ -187,16 +201,18 @@ main {
 
 
 /* Mobile */
-@media (max-width: 768px) {
-  
+@media (max-width: 480px) {
+
   /* Ajuste do Hero para mobile */
   .hero {
     height: 300px;
   }
+
   /* Título principal no mobile */
   .hero-conteudo h1 {
     font-size: 2.5em;
   }
+
   /* Texto de introdução no mobile */
   .hero-conteudo .introducao p {
     font-size: 1em;
