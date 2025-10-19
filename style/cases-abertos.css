@@ -14,6 +14,7 @@ main {
     justify-content: center;
     align-items: center;
 }
+
 /* Cor branca do h1 e deixa ele com um tamanho de fonte específico*/
 .seção-hero h1 {
     font-size: 4rem;
@@ -67,7 +68,7 @@ main {
     font-size: 2rem;
 }
 
-.projeto{
+.projeto {
     background-color: #ffffff;
     margin: 2rem;
     padding: 1.5rem;
@@ -97,7 +98,9 @@ main {
     margin-bottom: 0.5rem;
 }
 
-.card p, h3, a {
+.card p,
+h3,
+a {
     padding: 0.5rem;
     color: black;
 }
@@ -143,4 +146,58 @@ main {
     padding: 1rem;
     border-radius: 10px;
     color: white;
+}
+
+@media (max-width: 480px) {
+
+    .seção-hero h1 {
+        text-align: center;
+    }
+
+    .titulo {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .titulo img {
+        width: 98%;
+        height: auto;
+        margin-right: 0;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        background-color: #ffffff;
+        margin: 2rem;
+        padding: 1.5rem;
+        border-radius: 20px;
+    }
+
+    .container section {
+        width: 100%;
+    }
+
+    .container aside {
+        width: 100%;
+    }
+
+    .projeto {
+        background-color: #ffffff;
+        margin: 0;
+        padding: 0;
+        border-radius: 20px;
+    }
+
+    .projeto img {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    .cta h4 {
+        text-align: center;
+    }
 }
