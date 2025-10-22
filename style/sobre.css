@@ -202,6 +202,13 @@ main {
 
 /* Mobile */
 @media (max-width: 480px) {
+  /* deixa apenas com rolagem vertical evitando espaçamento branco ao lado */
+    html,
+    body {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
 
   /* Ajuste do Hero para mobile */
   .hero {
